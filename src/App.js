@@ -1,16 +1,4 @@
 import React from 'react';
-//import logo from './logo.svg';
-//import './App.css';
-
-function App() {
-  const dom = <h1>Hi!</h1>;
-  return (
-    <React.Fragment>
-      <p>pragraph1</p>
-      <p>pragraph2</p>
-    </React.Fragment>
-  );
-}
 
 // class App extends React.Component{
 //   render(){
@@ -23,5 +11,21 @@ function App() {
 //     );
 //   }
 // }
+
+const App = () => {
+  return (
+    <React.Fragment>
+      <div>functional component!</div>
+      <Cat />
+      <Cat />
+      <Cat />
+      <Cat />
+    </React.Fragment>
+  );
+}
+
+const Cat = () => {
+  return <div>Meow!</div>;
+}
 
 export default App;
